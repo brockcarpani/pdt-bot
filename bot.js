@@ -3,23 +3,21 @@ var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
-var testChunks, testText;
+var testText;
 
 function respond() {
-  var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy$/;
+  var textRec = JSON.parse(this.req.chunks[0]);
+  var botRegex = /^\!dd$/;
   
-  testChunks = JSON.parse(this.req.chunks[0]);
-  testText = botRegex.test(request.text);
-  console.log(testChunks);
-  console.log(testText);
+  testText = textRec;
 
-  if(request.text && botRegex.test(request.text)) {
+  if(textRec && botRegex.test(textRec)) {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
   } else {
     console.log("don't care");
+    postMessage();
     this.res.writeHead(200);
     this.res.end();
   }
