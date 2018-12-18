@@ -3,21 +3,16 @@ var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
-var testText;
-
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\!dd$/;
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    testText = "true";
     postMessage();
     this.res.end();
   } else {
     console.log("don't care");
-    testText = "false";
-    postMessage();
     this.res.writeHead(200);
     this.res.end();
   }
@@ -25,8 +20,6 @@ function respond() {
 
 function postMessage() {
   var botResponse, options, body, botReq;
-
-  botResponse = cool();
 
   options = {
     hostname: 'api.groupme.com',
@@ -36,7 +29,7 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : testText
+    "text" : "Hello world";
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
