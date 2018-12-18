@@ -10,7 +10,7 @@ function respond() {
       botRegex = /^\/cool guy$/;
   
   testChunks = JSON.parse(this.req.chunks[0]);
-  testText = request.text;
+  testText = botRegex.test(request.text);
   console.log(testChunks);
   console.log(testText);
 
@@ -20,7 +20,6 @@ function respond() {
     this.res.end();
   } else {
     console.log("don't care");
-    postMessage();
     this.res.writeHead(200);
     this.res.end();
   }
