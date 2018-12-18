@@ -29,7 +29,7 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : "Hello world";
+    "text" : "Hello world"
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
