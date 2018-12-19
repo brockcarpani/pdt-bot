@@ -28,6 +28,11 @@ port = Number(process.env.PORT || 5000);
 server.listen(port);
 
 function ping() {
-  this.res.writeHead(200);
-  this.res.end("Hey, I'm Cool Guy.");
+  //this.res.writeHead(200);
+  //this.res.end("Hey, I'm Cool Guy.");
+  fs.readFile('schedule.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    res.end();
+  });
 }
