@@ -78,7 +78,6 @@ function getAccessToken(oAuth2Client, callback) {
  * Lists the next 10 events on the user's primary calendar.
  * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
  */
- var testString = "nothing";
 function listEvents(auth) {
   const calendar = google.calendar({version: 'v3', auth});
   calendar.events.list({
@@ -95,11 +94,9 @@ function listEvents(auth) {
       events.map((event, i) => {
         const start = event.start.dateTime || event.start.date;
         console.log(`${start} - ${event.summary}`);
-		testString = "if";
       });
     } else {
       console.log('No upcoming events found.');
-	  testString = "else";
     }
   });
 }
@@ -124,11 +121,11 @@ server = http.createServer(function (req, res) {
   });
   
   
-  // fs.readFile('schedule.html', function(err, data) {
-    // res.writeHead(200, {'Content-Type': 'text/html'});
-    // res.write(data);
-    // res.end();
-  // });
+  fs.readFile('schedule.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    res.end();
+  });
   
 });
 
@@ -136,6 +133,6 @@ port = Number(process.env.PORT || 5000);
 server.listen(port);
 
 function ping() {
-  this.res.writeHead(200);
-  this.res.end(testString);
+  // this.res.writeHead(200);
+  // this.res.end(testString);
 }
