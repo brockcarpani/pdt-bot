@@ -6,8 +6,6 @@ cool        = require('cool-ascii-faces');
 bot         = require('./bot.js');
 var fs = require('fs');
 
-localStorage.setItem("testVar", "Hello from gloabl var");
-
 router = new director.http.Router({
   '/' : {
     post: bot.respond,

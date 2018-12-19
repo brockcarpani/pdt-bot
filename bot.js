@@ -20,8 +20,6 @@ function respond() {
 
 function postMessage() {
   var botResponse, options, body, botReq;
-
-  botResponse = localStorage.getItem("testVar");
   
   options = {
     hostname: 'api.groupme.com',
@@ -31,7 +29,7 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : botResponse
+    "text" : "Hello world!"
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
