@@ -29,7 +29,7 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : testVar
+    "text" : localStorage.getItem("testVar")
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
