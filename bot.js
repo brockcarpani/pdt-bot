@@ -1,8 +1,5 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
-//
-var Calendar = require('tui-calendar');
-//
 
 var botID = process.env.BOT_ID;
 
