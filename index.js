@@ -19,7 +19,7 @@ const SCOPES = ['https://www.googleapis.com/auth/calendar.readonly'];
 const TOKEN_PATH = 'token.json';
 
 // Load client secrets from a local file.
-fs.readFile('credentials.json', (err, content) => {
+fs.readFile('credentials.json', (err, content) = {
   if (err) return console.log('Error loading client secret file:', err);
   // Authorize a client with credentials, then call the Google Calendar API.
   authorize(JSON.parse(content), listEvents);
@@ -37,7 +37,7 @@ function authorize(credentials, callback) {
       client_id, client_secret, redirect_uris[0]);
 
   // Check if we have previously stored a token.
-  fs.readFile(TOKEN_PATH, (err, token) => {
+  fs.readFile(TOKEN_PATH, (err, token) = {
     if (err) return getAccessToken(oAuth2Client, callback);
     oAuth2Client.setCredentials(JSON.parse(token));
     callback(oAuth2Client);
@@ -60,13 +60,13 @@ function getAccessToken(oAuth2Client, callback) {
     input: process.stdin,
     output: process.stdout,
   });
-  rl.question('Enter the code from that page here: ', (code) => {
+  rl.question('Enter the code from that page here: ', (code) = {
     rl.close();
-    oAuth2Client.getToken(code, (err, token) => {
+    oAuth2Client.getToken(code, (err, token) = {
       if (err) return console.error('Error retrieving access token', err);
       oAuth2Client.setCredentials(token);
       // Store the token to disk for later program executions
-      fs.writeFile(TOKEN_PATH, JSON.stringify(token), (err) => {
+      fs.writeFile(TOKEN_PATH, JSON.stringify(token), (err) = {
         if (err) console.error(err);
         console.log('Token stored to', TOKEN_PATH);
       });
@@ -87,12 +87,12 @@ function listEvents(auth) {
     maxResults: 10,
     singleEvents: true,
     orderBy: 'startTime',
-  }, (err, res) => {
+  }, (err, res) = {
     if (err) return console.log('The API returned an error: ' + err);
     const events = res.data.items;
     if (events.length) {
       console.log('Upcoming 10 events:');
-      events.map((event, i) => {
+      events.map((event, i) = {
         const start = event.start.dateTime || event.start.date;
         console.log(`${start} - ${event.summary}`);
       });
