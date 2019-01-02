@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 const CONFIG = require('./settings');
 const CalendarAPI = require('node-google-calendar');
-let cal = new CalendarAPI(CONFIG);
+var cal = new CalendarAPI(CONFIG);
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
