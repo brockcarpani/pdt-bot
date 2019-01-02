@@ -28,12 +28,7 @@ function calendarList() {
 	  showHidden: true
 	};
 
-	cal.CalendarList.list(params)
-	  .then(resp = {
-		console.log(resp);
-	  }).catch(err = {
-		console.log(err.message);
-	  });
+	console.log(cal.CalendarList.list(params));
 }
 
 function postMessage() {
