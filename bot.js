@@ -24,7 +24,7 @@ function respond() {
 }
 
 function calendarList() {
-	let params = {
+	var params = {
 	  showHidden: true
 	};
 
