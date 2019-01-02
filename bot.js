@@ -29,9 +29,9 @@ function calendarList() {
 	};
 
 	cal.CalendarList.list(params)
-	  .then(resp => {
+	  .then(resp = {
 		console.log(resp);
-	  }).catch(err => {
+	  }).catch(err = {
 		console.log(err.message);
 	  });
 }
