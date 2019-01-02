@@ -13,7 +13,6 @@ function respond() {
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-	calendarList();
     postMessage();
     this.res.end();
   } else {
@@ -21,21 +20,6 @@ function respond() {
     this.res.writeHead(200);
     this.res.end();
   }
-}
-
-function calendarList() {
-	/*
-	var params = {
-	  showHidden: true
-	};
-
-	cal.CalendarList.list(params)
-	  .then(resp => {
-		console.log(resp);
-	  }).catch(err => {
-		console.log(err.message);
-	  });
-	  */
 }
 
 function postMessage() {
