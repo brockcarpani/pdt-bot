@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dd-groupme-bot-1545258832711",
+  "private_key_id": "6bbddfe64f004dafc55b4db736a5b6a1367f4afc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCH+ECbhn6Nx+57\n8NepOMhGBZ6keo69z0mOMvMDdmFWtLcMy2Tn6DN6raTLk0YETzYEy0M86rRtJjAr\n1Glss6NFrCYxMzspOKZQxyJeFe02hNgC9NRAVtEjPAuWP5PA654EXqmCK3HxYdDI\nef7zEKIE21ZH93rllou5SFQoHG9UJtn7kgqjShoUMb63Ny68Yu0dwb2kIDSgRkzd\n6/DqSdhrP2GyTXfUcIQYrlK+Tvhj95DPNNCEtW53lRYsxDmYLZ1jjBY+5QMJQmJd\nDRhIgmr1M2b58SF3xS9Xvk8f6CHxQEoL4N9NXGzxT7pSNsjk5FUfL13O/1YQaKA7\nwX7Dz7XrAgMBAAECggEAGZGRdK2h9r92FVCA/Y1z+9bqsjtpxD/KsTbbg/cq7sck\n9P76hrGfnJ4ysyWKsRzEJ7qhdj8clrnrrRJQkORm+58Xv4DGy0Wf4OjRiafN58ar\naELp9v9cbKfJ9gMWodys5l12use4sY+XV1u5mbOzA/7LBtV/AtWAiOMVEEXomYY+\npGchMHTB44NbRAsuarz1MYsZSLsA6JTaqKTNBk5NAWoViWFgUD+hFlUhDgpOm+lu\n3V3RckFpeXHeDdfNtFPMdAq9JrgegggtYyQF4k/6qDPE54JNpVXWndh9Msmli9OF\n+AzdPglr66RmXos1MT46m884xERsXhNvlbW1nSo6gQKBgQC6yPvMDoOzEmILCCTE\neOU/z1YJukXOiVFT/OxBzDhUWzjyiZlZtPv4PUb3xtSKBGZ08PqqemjntvmHsPaP\nYDE7gwM2ZINEwN7C8OhobFaX1olCHVJ2Rr2AAFnyO3LjqtzRTWhaJclo2oemkECm\n/tM8OrrFzdWlkOKEbahUHv4xOwKBgQC6WsP+ccDz7AQS6tiIjTRkokCafdSMZxoh\nEDR+nIuW2MoMtWW6jCNW+Jr3hn0+IpP1lqwsL/ZeJSj8auXFOF6+m9YKSB3/4Q14\nd6nb2WP5K9NVZrtPjQVxR5+gNdO1pQF4q3epkh+QPVQf/msLnwl0v1v8uFnzlTbj\nshHzqWRDEQKBgBqCLaIfKTe/0yRHqpgrpDVzIn3M7t1KBb3Ktmj8J75pF+Lr/lSJ\n5/yqDalakY1o5HWSQbDyIHNKN423YrakazhL9qfAihS23qaB9CnlvkBcVSyJ5ssc\nbQZ+hkVnhH2lISOfPcEVfckgwoG0FUjd/3KbzygFd13A+zTaLzqJD4BDAoGAb4Q1\nWSRVZSJNZcynez+UpMv7gPffo41nM3XxE/s2BTUB5A0BLVsDIt5uTcVrWS10ATkD\nGwYwljICjtqhWR3chI/YzBpP6XmRiA+D1A4JJ2i0dJyfZoFrSlikC0lqwX5WnRFu\n8EiDHtu0Zdjn0fJ/xB9nOppPKdaXHDbJS1iIqSECgYEAk2cGLONFL4SNDtNjr+/y\ns4NJKNQI9hivuGmkG7baSTaeEcV7F6H/ipL/1WmeAtWR8x/ZlzmvasQ6NedQ4HfF\nk1nWq/0GUUbmfFM48bhB4QKXvKlF3Bzd0TxcSf84qUycTyqouWEjbBk3NIGmkBmO\nxWTBs6kith0JjbOhWkKJpkA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dd-service-account@dd-groupme-bot-1545258832711.iam.gserviceaccount.com",
+  "client_id": "116776882981850216873",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dd-service-account%40dd-groupme-bot-1545258832711.iam.gserviceaccount.com"
+}
