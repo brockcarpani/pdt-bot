@@ -5,9 +5,6 @@ director    = require('director');
 cool        = require('cool-ascii-faces');
 bot         = require('./bot.js');
 var fs = require('fs');
-const CONFIG = require('./settings');
-const CalendarAPI = require('node-google-calendar');
-var cal = new CalendarAPI(CONFIG);
 
 router = new director.http.Router({
   '/' : {
