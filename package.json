@@ -13,7 +13,7 @@
     "node-google-calendar": "^1.1.1"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "10.x"
   },
   "repository": {
     "type": "git",
