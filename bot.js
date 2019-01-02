@@ -24,6 +24,7 @@ function respond() {
 }
 
 function calendarList() {
+	/*
 	var params = {
 	  showHidden: true
 	};
@@ -34,6 +35,7 @@ function calendarList() {
 	  }).catch(err => {
 		console.log(err.message);
 	  });
+	  */
 }
 
 function postMessage() {
