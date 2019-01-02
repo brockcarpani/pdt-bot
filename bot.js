@@ -3,12 +3,17 @@ var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
+const CONFIG = require('./settings');
+const CalendarAPI = require('node-google-calendar');
+let cal = new CalendarAPI(CONFIG);
+
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\!dd$/;
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
+	calendarList();
     postMessage();
     this.res.end();
   } else {
@@ -16,6 +21,19 @@ function respond() {
     this.res.writeHead(200);
     this.res.end();
   }
+}
+
+function calendarList() {
+	let params = {
+	  showHidden: true
+	};
+
+	cal.CalendarList.list(params)
+	  .then(resp => {
+		console.log(resp);
+	  }).catch(err => {
+		console.log(err.message);
+	  });
 }
 
 function postMessage() {
